@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://douglasmouradev.github.io/site-tdesk/sitemap.xml
+
+

@@ -852,7 +852,7 @@
                         <li><i class="fas fa-check"></i> Suporte por email</li>
                         <li><i class="fas fa-check"></i> Interface responsiva</li>
                     </ul>
-                    <a href="#contact" class="cta-button">Escolher Plano</a>
+                    <a href="https://wa.me/5571993801480?text=Quero%20o%20plano%20Básico%20do%20TDesk" class="cta-button" target="_blank" rel="noopener">Escolher Plano</a>
                 </div>
                 <div class="pricing-card featured">
                     <div class="pricing-header">
@@ -871,7 +871,7 @@
                         <li><i class="fas fa-check"></i> Suporte prioritário</li>
                         <li><i class="fas fa-check"></i> API completa</li>
                     </ul>
-                    <a href="#contact" class="cta-button">Escolher Plano</a>
+                    <a href="https://wa.me/5571993801480?text=Quero%20o%20plano%20Profissional%20do%20TDesk" class="cta-button" target="_blank" rel="noopener">Escolher Plano</a>
                 </div>
                 <div class="pricing-card">
                     <div class="pricing-header">
@@ -890,7 +890,7 @@
                         <li><i class="fas fa-check"></i> Suporte 24/7</li>
                         <li><i class="fas fa-check"></i> Treinamento personalizado</li>
                     </ul>
-                    <a href="#contact" class="cta-button">Escolher Plano</a>
+                    <a href="https://wa.me/5571993801480?text=Quero%20o%20plano%20Enterprise%20do%20TDesk" class="cta-button" target="_blank" rel="noopener">Escolher Plano</a>
                 </div>
             </div>
         </div>
@@ -962,6 +962,32 @@
                     <p>Salvador, BA - Brasil</p>
                 </div>
             </div>
+
+            <form action="https://formsubmit.co/douglas.hennrique@hotmail.com" method="POST" style="max-width: 640px; margin: 2rem auto 0; text-align: left; background: rgba(255,255,255,0.06); padding: 1.5rem; border-radius: 12px;">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_subject" value="Novo contato via site - TDesk Solutions">
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem;">
+                    <div>
+                        <label for="name" style="display:block; font-weight:600; margin-bottom:0.5rem;">Nome</label>
+                        <input id="name" name="name" type="text" required placeholder="Seu nome" style="width:100%; padding:0.75rem; border-radius:8px; border:1px solid rgba(255,255,255,0.2); background:rgba(255,255,255,0.1); color:#fff;">
+                    </div>
+                    <div>
+                        <label for="email" style="display:block; font-weight:600; margin-bottom:0.5rem;">Email</label>
+                        <input id="email" name="email" type="email" required placeholder="seu@email.com" style="width:100%; padding:0.75rem; border-radius:8px; border:1px solid rgba(255,255,255,0.2); background:rgba(255,255,255,0.1); color:#fff;">
+                    </div>
+                </div>
+                <div style="margin-top:1rem;">
+                    <label for="message" style="display:block; font-weight:600; margin-bottom:0.5rem;">Mensagem</label>
+                    <textarea id="message" name="message" rows="4" required placeholder="Conte um pouco sobre sua necessidade" style="width:100%; padding:0.75rem; border-radius:8px; border:1px solid rgba(255,255,255,0.2); background:rgba(255,255,255,0.1); color:#fff;"></textarea>
+                </div>
+                <div style="margin-top:1rem; display:flex; gap:0.75rem;">
+                    <button type="submit" class="cta-button" aria-label="Enviar mensagem">Enviar</button>
+                    <a href="https://wa.me/5571993801480?text=Olá%20TDesk%20Solutions%2C%20gostaria%20de%20um%20contato." class="btn-secondary" target="_blank" rel="noopener" aria-label="Falar no WhatsApp">
+                        <i class="fab fa-whatsapp" aria-hidden="true"></i>
+                        WhatsApp
+                    </a>
+                </div>
+            </form>
         </div>
     </section>
 
@@ -1012,6 +1038,11 @@
                         behavior: 'smooth',
                         block: 'start'
                     });
+                }
+                // Fecha o menu mobile ao clicar em um link
+                if (navMenu && navMenu.classList.contains('active')) {
+                    navMenu.classList.remove('active');
+                    if (navToggle) navToggle.setAttribute('aria-expanded', 'false');
                 }
             });
         });
